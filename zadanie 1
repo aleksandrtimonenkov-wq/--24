@@ -1,0 +1,14 @@
+<?php
+function getGreeting($name) {
+    $result = "Привет, " . $name . "!";
+    return $result;
+}
+
+echo getGreeting("Иван");
+echo "
+";
+echo getGreeting("Аня");
+echo "
+";
+echo getGreeting("Петр");
+?>
