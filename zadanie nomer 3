@@ -1,0 +1,11 @@
+<?php
+function makeCoffee($type, $sugar = 0) {
+    $text = "Ваш кофе: " . $type . ", сахара: " . $sugar . " ложек.";
+    return $text;
+}
+
+echo makeCoffee("Американо", 3);
+echo "
+";
+echo makeCoffee("Латте"); // Здесь сахар будет 0
+?>
