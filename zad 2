@@ -1,0 +1,12 @@
+<?php
+function calculateRectangleArea($length, $width) {
+    $res = $length * $width;
+    return $res;
+}
+
+$area = calculateRectangleArea(5, 10);
+
+$area = $area * 2;
+
+echo $area;
+?>
