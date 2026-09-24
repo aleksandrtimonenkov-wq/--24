@@ -1,0 +1,18 @@
+<?php
+function processComment($comment) {
+    $clean_text = trim($comment);
+    
+    $length = strlen($clean_text);
+    
+    if ($length < 5) {
+        return "Комментарий слишком короткий";
+    } else {
+        return "Комментарий принят";
+    }
+}
+
+echo processComment("  Привет  ");
+echo "
+";
+echo processComment(" Тест ");
+?>
